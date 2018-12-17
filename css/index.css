@@ -30,9 +30,9 @@ body {
 
 @font-face {
   font-family: 'iconfont';
-  /* project id 861369 */
-  src: url("//at.alicdn.com/t/font_861369_9voy0xmnmvl.eot");
-  src: url("//at.alicdn.com/t/font_861369_9voy0xmnmvl.eot?#iefix") format("embedded-opentype"), url("//at.alicdn.com/t/font_861369_9voy0xmnmvl.woff") format("woff"), url("//at.alicdn.com/t/font_861369_9voy0xmnmvl.ttf") format("truetype"), url("//at.alicdn.com/t/font_861369_9voy0xmnmvl.svg#iconfont") format("svg"); }
+  /* project id 970532 */
+  src: url("//at.alicdn.com/t/font_970532_iwnrh5pfub.eot");
+  src: url("//at.alicdn.com/t/font_970532_iwnrh5pfub.eot?#iefix") format("embedded-opentype"), url("//at.alicdn.com/t/font_970532_iwnrh5pfub.woff") format("woff"), url("//at.alicdn.com/t/font_970532_iwnrh5pfub.ttf") format("truetype"), url("//at.alicdn.com/t/font_970532_iwnrh5pfub.svg#iconfont") format("svg"); }
 
 .iconfont {
   font-family: "iconfont" !important;
@@ -44,7 +44,7 @@ body {
   .iconfont.icon-behance::before {
     content: '\e919'; }
   .iconfont.icon-lofter::before {
-    content: '\e63c'; }
+    content: '\e90b'; }
   .iconfont.icon-instagram::before {
     content: '\e626'; }
   .iconfont.icon-dribbble::before {

@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html>
+<head><meta name="generator" content="Hexo 3.8.0">
+  <meta charset="utf-8">
+  
+  <title>1-3 KANO模型 及 其他常用设计模型 | Tao&#39;s blog</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <meta name="description" content="KANO 模型1.概念kano模型是狩野纪昭教授发明的一种工具，以分析用户需求对用户满意的影响为基础，体现了产品性能和用户满意之间的非线性关系。 在卡诺模型中，将产品和服务的质量特性分为五种类型：  必备属性：当优化此需求，用户满意度不会提升，当不提供此需求，用户满意度会大幅降低； 期望属性：当提供此需求，用户满意度会提升，当不提供此需求，用户满意度会降低； 魅力属性：用户意想不到的，如果不提供此">
+<meta name="keywords" content="blog ux ui">
+<meta property="og:type" content="article">
+<meta property="og:title" content="1-3 KANO模型 及 其他常用设计模型">
+<meta property="og:url" content="http://yoursite.com/2018/12/03/1-3 KANO模型 及 其他.常用设计模型/index.html">
+<meta property="og:site_name" content="Tao&#39;s blog">
+<meta property="og:description" content="KANO 模型1.概念kano模型是狩野纪昭教授发明的一种工具，以分析用户需求对用户满意的影响为基础，体现了产品性能和用户满意之间的非线性关系。 在卡诺模型中，将产品和服务的质量特性分为五种类型：  必备属性：当优化此需求，用户满意度不会提升，当不提供此需求，用户满意度会大幅降低； 期望属性：当提供此需求，用户满意度会提升，当不提供此需求，用户满意度会降低； 魅力属性：用户意想不到的，如果不提供此">
+<meta property="og:locale" content="default">
+<meta property="og:image" content="https://cdn.nlark.com/lark/0/2018/jpeg/14378/1545284797073-9655c2cb-c45c-4e18-a904-8492c31528b8.jpeg">
+<meta property="og:image" content="https://cdn.nlark.com/lark/0/2018/jpeg/14378/1545284810729-ef19c000-0657-48e5-bf7c-3649f40d1bc8.jpeg">
+<meta property="og:image" content="https://cdn.nlark.com/lark/0/2018/jpeg/14378/1545284822008-cf1f1d99-38e7-4b6f-a925-a289d93fdb19.jpeg">
+<meta property="og:image" content="https://cdn.nlark.com/lark/0/2018/jpeg/14378/1545284831939-31e6d4ae-5c73-4f11-8592-15ce76ae4b7e.jpeg">
+<meta property="og:image" content="https://cdn.nlark.com/lark/0/2018/jpeg/14378/1545284843168-627c1b9b-b33c-4d92-a9ba-890b73b012d4.jpeg">
+<meta property="og:image" content="https://cdn.nlark.com/lark/0/2018/jpeg/14378/1545284923635-1a84df74-7f09-49e7-8326-e6a3a216fb2b.jpeg">
+<meta property="og:image" content="https://cdn.nlark.com/lark/0/2018/jpeg/14378/1545284855482-2c6fed39-c804-4459-8312-85701ba5e1f5.jpeg">
+<meta property="og:image" content="https://cdn.nlark.com/lark/0/2018/jpeg/14378/1545284634692-89650ad4-130d-4322-a85e-d276040282c8.jpeg">
+<meta property="og:image" content="https://cdn.nlark.com/lark/0/2018/jpeg/14378/1545284617169-0009e8da-1454-416b-9d11-46b9a2b99c2b.jpeg">
+<meta property="og:image" content="https://cdn.nlark.com/lark/0/2018/jpeg/14378/1545284683411-5f85d166-9250-4ccd-ac7f-b34cd2522279.jpeg">
+<meta property="og:image" content="https://cdn.nlark.com/lark/0/2018/jpeg/14378/1545284701255-749064bf-b80c-4764-b9bc-b718fd2b8411.jpeg">
+<meta property="og:image" content="https://cdn.nlark.com/lark/0/2018/jpeg/14378/1545284712523-fdc4ca79-8262-41e8-90a0-7c16e4de950d.jpeg">
+<meta property="og:image" content="https://cdn.nlark.com/lark/0/2018/jpeg/14378/1545284724790-2cef6a57-4beb-4a8e-b3be-0e86e7f5edc4.jpeg">
+<meta property="og:image" content="https://cdn.nlark.com/lark/0/2018/jpeg/14378/1545284736152-d33eee69-1d55-4f43-961f-e3709d2f041e.jpeg">
+<meta property="og:image" content="https://cdn.nlark.com/lark/0/2018/jpeg/14378/1545284742257-c338c478-3bd9-4a23-b1b4-a1934f79bc99.jpeg">
+<meta property="og:image" content="https://cdn.nlark.com/lark/0/2018/jpeg/14378/1545284775278-84d466da-fbd4-499c-9d74-9d4036212e80.jpeg">
+<meta property="og:image" content="https://cdn.nlark.com/lark/0/2018/jpeg/14378/1545284783681-fa29305a-6922-4238-8fc8-33b730579d3a.jpeg">
+<meta property="og:image" content="https://cdn.nlark.com/lark/0/2018/jpeg/14378/1545284864364-16f6613e-11fd-4a68-a5c4-9061800d32a4.jpeg">
+<meta property="og:updated_time" content="2018-12-23T14:20:43.586Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="1-3 KANO模型 及 其他常用设计模型">
+<meta name="twitter:description" content="KANO 模型1.概念kano模型是狩野纪昭教授发明的一种工具，以分析用户需求对用户满意的影响为基础，体现了产品性能和用户满意之间的非线性关系。 在卡诺模型中，将产品和服务的质量特性分为五种类型：  必备属性：当优化此需求，用户满意度不会提升，当不提供此需求，用户满意度会大幅降低； 期望属性：当提供此需求，用户满意度会提升，当不提供此需求，用户满意度会降低； 魅力属性：用户意想不到的，如果不提供此">
+<meta name="twitter:image" content="https://cdn.nlark.com/lark/0/2018/jpeg/14378/1545284797073-9655c2cb-c45c-4e18-a904-8492c31528b8.jpeg">
+  
+    <link rel="icon" href="https://s1.ax1x.com/2018/12/17/F0T3T0.png">
+  
+  <link rel="stylesheet" href="/css/index.css">
+</head>
+</html>
+<body style="
+
+
+  background-color: #eff0f6
+
+">
+  <div id="container">
+    <nav id="nav">
+  <header class="header">
+    <a href="/" class="title">Tao</a>
+  </header>
+  <div class="ctnWrap">
+    <div class="icons">
+      
+        
+          
+            <a href="mailto:ken-tao@foxmail.com" target="_blank" class="nav-icn iconfont icon-mail"></a>
+          
+        
+          
+            <a href="https:www.linkedin.com/in/tao98" target="_blank" class="nav-icn iconfont icon-linkedin"></a>
+          
+        
+          
+            <a href="https://www.instagram.com/clovertuan/" target="_blank" class="nav-icn iconfont icon-zcool"></a>
+          
+        
+          
+            <a href="https://github.com/tao98" target="_blank" class="nav-icn iconfont icon-github"></a>
+          
+        
+      
+    </div>
+    <div class="menu">
+      
+        
+            <a href="/" class="nav-menu ">BLOG</a>
+          
+        
+            <a href="/archives" class="nav-menu ">ARCHIVES</a>
+          
+        
+            <a href="/portfilio" class="nav-menu ">PORTFOLIO</a>
+          
+        
+            <a href="/about" class="nav-menu ">ABOUT</a>
+          
+        
+      
+    </div>
+  </div>
+</nav>
+    <div id="main"><section class="article">
+  <h2 class="title">1-3 KANO模型 及 其他常用设计模型</h2>
+  <p class="sub">Dec 3, 2018</p>
+  <article class="content">
+    <h2 id="KANO-模型"><a href="#KANO-模型" class="headerlink" title="KANO 模型"></a>KANO 模型</h2><h3 id="1-概念"><a href="#1-概念" class="headerlink" title="1.概念"></a>1.概念</h3><p>kano模型是狩野纪昭教授发明的一种工具，以分析用户需求对用户满意的影响为基础，体现了产品性能和用户满意之间的非线性关系。</p>
+<p>在卡诺模型中，将产品和服务的质量特性分为五种类型：</p>
+<ul>
+<li>必备属性：当优化此需求，用户满意度不会提升，当不提供此需求，用户满意度会大幅降低；</li>
+<li>期望属性：当提供此需求，用户满意度会提升，当不提供此需求，用户满意度会降低；</li>
+<li>魅力属性：用户意想不到的，如果不提供此需求，用户满意度不会降低，但当提供此需求，用户满意度会有很大提升；</li>
+<li>无差异因素：无论提供或不提供此需求，用户满意度都不会有改变，用户根本不在意；</li>
+<li>反向属性：用户根本都没有此需求，提供后用户满意度反而会下降。</li>
+</ul>
+<blockquote>
+<p>基本需求：也是基础性需求，理所当然的需求，也是用户认为“必须要有”的功能。简单的来讲，如果“没有”，用户就会很不满意，如果“有”，用户也不会为此感到满意，毕竟，此类型需求属于“理所当然”的需求。比如说，需求文档，对于产品经理而言，就是这样的基本需求，如果不会，那你的leader大概会对你极为不满，如果你会，他也不会为此表扬你。</p>
+</blockquote>
+<blockquote>
+<p>期望需求：此类型需求与基本需求相反，简单的来讲，就是这么一个意思，如果有，则用户会感到满意，如果没有，用户也不会感到失望。比如说，需求管理，对于我们来讲，就是属于期望需求，作为产品经理而言，将我们的需求管理的越好，我们的leader 会越满意，反之，即使你不会管理需求，他也不会对你有所不满，大概就是表现平平之类的吧。</p>
+</blockquote>
+<blockquote>
+<p>兴奋需求：兴奋需求某种含义上是期望需求的升级版本，有时候我们会提到的超越用户预期，以及 挖掘表面需求背后隐藏的需求，便是指期望需求和兴奋需求的关系。就以表面和背后来讲，期望需求是指用户表面的需求， 兴奋需求则是指背后的真实需求。我们仍然以需求文档来举例。管理需求文档是我们表面的需求，通过对需求文档的管理，让团队效率更高，有更多的需求可被复用，以及需求尽可能少的变更，始终让团队的战斗力发挥有效价值，这个便是让leader兴奋的需求。作为产品经理而言，需求反复，需求变更，遗漏需求，相信大家都不陌生，不仅仅是我们的leader，即便是对于我们自身而言，如果真的能减少反复，减少变更，同样也会让我们感到兴奋的，难道不是吗？</p>
+</blockquote>
+<blockquote>
+<p>无差异需求是指有没有都无所谓的这部分需求，不论提供或者不提供，对用户体验无影响，换言之，即使不做，也不会让客户不满意。这部分需求，往往是我们要避免的 “多余动作”，虽然是这样说，但在工作上，我们却极为容易做出这样的事情。这个案例算是很经典了，“登录”与“登陆” 当我们在文章里 写到了“登陆”时，如果产生了情绪，这就代表我们在工作中，会经常性的为了无差异的事情耗费时间，毕竟，这样的错别字，并不会影响用户体验。（我需要强调，我们所谓的用户，是指使用某产品的人，以需求文档为例，他在开发过程中起到指引，排查的作用，而不是阅读一篇文章，因此文档里的错别字，在一定范围内是被允许且接受的。）避免无差异需求的原因在于，其会占用我们宝贵且不可再生的资源。</p>
+</blockquote>
+<blockquote>
+<p>反向需求是指少数派需求，我们在做需求分析时，需要考虑需求的使用面积，并且在做优先级划分时，也需要按照影响面积来考虑，以满足大部分人的需求为首要目的，与这个原则相反的，便是反向需求，只满足少部分的需求。反向需求同时也是无差异需求的升级版本，我们所谓的无差异需求，是做不做都没影响，反向需求恰恰就属于，做了就会产生负面影响。比如，在需求评审时，我们在会议上讨论某文案内容，或者说某参数的设定，这种便是反向需求。在我们的team里，大部分的成员其实不关心文案也无须关心文案，只有少部分成员会关心这个问题。正确的处理方法是在评审会议里，讨论大部分人关心的议题，比如功能的业务逻辑，或者说为什么要做某功能。<br>作者：枯叶<br>链接：<a href="https://www.zhihu.com/question/22989667/answer/147825674" target="_blank" rel="noopener">https://www.zhihu.com/question/22989667/answer/147825674</a></p>
+</blockquote>
+<p><img src="https://cdn.nlark.com/lark/0/2018/jpeg/14378/1545284797073-9655c2cb-c45c-4e18-a904-8492c31528b8.jpeg" alt=""></p>
+<h3 id="2-使用场景"><a href="#2-使用场景" class="headerlink" title="2. 使用场景"></a>2. 使用场景</h3><p>卡诺模型的主要使用场景是对用户需求分类；<br>另一种是对多个功能点进行优先级排序。</p>
+<h3 id="3-具体使用操作"><a href="#3-具体使用操作" class="headerlink" title="3. 具体使用操作"></a>3. 具体使用操作</h3><hr>
+<p>3.1 步骤一：设计问卷调查表，实施有效的问卷调查<br>KANO 模型的问卷问法，是对每个质量特性都由正向和负向两个问题构成，分别测量用户在面对存在或不存在某项质量特性时的反应。问卷中的问题答案采用五级选项分别是：</p>
+<ul>
+<li>我很喜欢：让你感到满意、开心、惊喜。</li>
+<li>理应如此：你觉得是应该且必备的功能。</li>
+<li>无所谓：你不会特别在意，但还可以接受。</li>
+<li>勉强接受：你不喜欢，但可以接受。</li>
+<li>我很不喜欢：让你感到不满意。<br><img src="https://cdn.nlark.com/lark/0/2018/jpeg/14378/1545284810729-ef19c000-0657-48e5-bf7c-3649f40d1bc8.jpeg" alt=""></li>
+</ul>
+<hr>
+<p>3.2 步骤二：问卷结果整理，进行数据分析</p>
+<p>根据问卷结果进行 KANO 模型二维属性归属分析，可得出魅力属性、期望属性、必备属性、无差异属性、反向属性与可疑结果的功能属性归类百分比。除了对属性的归属探讨外，并通过百分比计算出 Better-Worse 系数，表示某功能可以增加满意或者消除很不喜欢的影响程度。</p>
+<p>增加后的满意系数 Better/SI=(A+O)/(A+O+M+I)<br>消除后的不满意系数 Worse/DSI=-1*(O+M)/(A+O+M+I)</p>
+<p><img src="https://cdn.nlark.com/lark/0/2018/jpeg/14378/1545284822008-cf1f1d99-38e7-4b6f-a925-a289d93fdb19.jpeg" alt=""></p>
+<p>根据better-worse系数值，将散点图划分为四个象限。</p>
+<ul>
+<li>第一象限/期望属性：better 与 worse系数成正比；表示产品提供此功能，用户满意度会提升，不提供此功能，用户满意度会降低，这是质量的竞争性属性，应尽力去满足用户的期望型需求。</li>
+<li>第二象限/魅力属性：better系数值高，worse 系数绝对值低的情况。表示不提供此功能，用户满意度不会降低，提供此功能，用户满意度和忠诚度会有很大提升；</li>
+<li>第三象限/无差异属性：better系数值低，worse系数绝对值也低的情况。即无论提供或不提供这些功能，用户满意度都不会有改变，这些功能点是用户并不在意的功能。</li>
+<li>第四象限/必备属性：better系数值低，worse系数绝对值高的情况。当产品提供此功能，用户满意度不会提升，当不提供此功能，用户满意度会大幅降低；此象限的功能是最基本的功能，这些需求是用户认为产品有义务做到的事情。</li>
+</ul>
+<hr>
+<p>3.3 步骤三：数据解读，将结果落地实施</p>
+<p>KANO 模型是对功能需求的优先级进行探索，是否需开发上线还要产品负责人进行决策和落地实施。</p>
+<h3 id="具体实践案例说明"><a href="#具体实践案例说明" class="headerlink" title="具体实践案例说明"></a>具体实践案例说明</h3><p>题目：根据报警内容，“掌上运维”提供运维操作建议（如磁盘满了智能推荐执行日志清理等）</p>
+<p>步骤一：设计问卷问题，发放问卷<br><img src="https://cdn.nlark.com/lark/0/2018/jpeg/14378/1545284831939-31e6d4ae-5c73-4f11-8592-15ce76ae4b7e.jpeg" alt=""><br>步骤二：问卷统计，进行 KANO 模型二维属性归属分析<br><img src="https://cdn.nlark.com/lark/0/2018/jpeg/14378/1545284843168-627c1b9b-b33c-4d92-a9ba-890b73b012d4.jpeg" alt=""></p>
+<p>步骤三：根据问卷统计的用户数据，计算出每个区域的百分比</p>
+<p>具体计算方式是全部区域的人数相加作为分母；每个格子中的数字作为分子，即可得出每个格子的百分比出来。</p>
+<p>具体百分比得出后，将下表中标 A、O、M、I、R、Q 的格子中百分比相加，即可得到五种属性对应的百分比。本调查结果可以得到A魅力属性占比为42.1%，O期望属性占比9%，M必备属性占比1.2%，I无差异属性占比38.9%，R反向属性占比1.8%，Q可疑结果占比7%。<br><img src="https://cdn.nlark.com/lark/0/2018/jpeg/14378/1545284923635-1a84df74-7f09-49e7-8326-e6a3a216fb2b.jpeg" alt=""></p>
+<p>步骤四：根据 Better-Worse 计算公式，得出 Better-Worse 系数，明确功能落点象限。<br><img src="https://cdn.nlark.com/lark/0/2018/jpeg/14378/1545284855482-2c6fed39-c804-4459-8312-85701ba5e1f5.jpeg" alt=""></p>
+<p>步骤五：多个功能需求结果对比进行优先级排序。</p>
+<h2 id="其他各阶段常用模型"><a href="#其他各阶段常用模型" class="headerlink" title="其他各阶段常用模型"></a>其他各阶段常用模型</h2><p><img src="https://cdn.nlark.com/lark/0/2018/jpeg/14378/1545284634692-89650ad4-130d-4322-a85e-d276040282c8.jpeg" alt=""></p>
+<h3 id="模型一：SWOT-模型"><a href="#模型一：SWOT-模型" class="headerlink" title="模型一：SWOT 模型"></a>模型一：SWOT 模型</h3><ol>
+<li><p>概念<br>SWOT分析法（也称 TOWS 分析法、道斯矩阵）即态势分析法，20世纪80年代初由美国旧金山大学的管理学教授韦里克提出，经常被用于企业战略制定、竞争对手分析等场合。<br>在现在的战略规划报告里，SWOT分析应该算是一个众所周知的工具。来自于麦肯锡咨询公司的SWOT分析，包括分析企业的优势（Strengths）、劣势（Weaknesses）、机会（Opportunities）和威胁（Threats）。</p>
+</li>
+<li><p>使用场景<br>主要用在产品前期的战略规划中；用于项目成员知己知彼，同时也能知道在行业领域自己的产品所处的位置和核心竞争力是什么；对于产品方向的定位和全方位分析有复用价值。</p>
+</li>
+<li><p>设计价值<br>SWOT 分析实际上是将对企业内外部条件，各方面内容进行综合和概括，进而分析组织的优劣势、面临的机会和威胁的一种方法。<br>优劣势分析主要是着眼于企业自身的实力及其与竞争对手的比较，而机会和威胁分析将注意力放在外部环境的变化及对企业的可能影响上 。在分析时，应把所有的内部因素（即优劣势）集中在一起，然后用外部的力量来对这些因素进行评估。</p>
+</li>
+<li><p>具体实践案例说明<br>下图是阿里内部某个数据服务平台分析的案例；侧重介绍了为什么要做这个数据平台；以及做这个平台我们项目组的优劣势和机会点分别是什么。在给老板汇报产品来源&amp;方向时是非常有效的。<br><img src="https://cdn.nlark.com/lark/0/2018/jpeg/14378/1545284617169-0009e8da-1454-416b-9d11-46b9a2b99c2b.jpeg" alt=""></p>
+</li>
+</ol>
+<p>最后，SWOT 分析模型其实还可以与商业画布相结合，便于更全面对项目/业务进行快速分析和深入了解；深入懂业务的设计师才能真正在团队中进行发声，提出超越 UI 层的建设性意见。</p>
+<h3 id="模型二：Google-Design-Sprint-设计方法"><a href="#模型二：Google-Design-Sprint-设计方法" class="headerlink" title="模型二：Google Design Sprint 设计方法"></a>模型二：Google Design Sprint 设计方法</h3><ol>
+<li><p>概念介绍<br>Design Sprint，设计冲刺，顾名思义就是要在短时间内做出好设计；是由 Google 提出的设计方法。</p>
+</li>
+<li><p>设计使用场景<br>设计冲刺这个设计方法主要适用于短时间就需要产出设计方案；例如一些 Workshop 的共建, 产品迭代周期很快的新需求/任务，需要系统化分析与输出设计方案。</p>
+</li>
+<li><p>设计价值<br>可以在很短的时间内输出一套系统化的设计策略及方案；<br>通过与不同背景的参与者进行沟通协作，能获取更多看事物的角度和差异化知识；创造更多可能；<br>作为一种理想的设计教育工具，让非科班的设计人员完整又快速了解产品&amp;设计。</p>
+</li>
+<li>具体实践案例说明<br>设计冲刺的主要内容包括6个阶段：</li>
+</ol>
+<ul>
+<li>理解（Understand）：理解要为用户解决的问题</li>
+<li>定义（Define）：明确产品策略（数据分析，用户调研，设计原则制定等）</li>
+<li>发散（Diverge）：探索实现方案</li>
+<li>决定（Decide）：确定设计方案</li>
+<li>原型（Prototype）：构建产品原型</li>
+<li>验证（Validate）：验证产品原型<br><img src="https://cdn.nlark.com/lark/0/2018/jpeg/14378/1545284683411-5f85d166-9250-4ccd-ac7f-b34cd2522279.jpeg" alt=""></li>
+</ul>
+<h3 id="模型三：GUCDR模型"><a href="#模型三：GUCDR模型" class="headerlink" title="模型三：GUCDR模型"></a>模型三：GUCDR模型</h3><ol>
+<li><p>概念介绍<br>相比前一个设计冲刺模型，GUCDR 模型在设计过程中的实用性更强，能让你快速用起来，帮你系统性梳理信息；在实际工作中，只要能够回答画布中的每个点，即可形成完整的设计推演过程，让设计思路逐渐清晰起来。<br> G：Goal<br> U：User<br> C：Condition<br> D：Design<br> R：Realize<br><img src="https://cdn.nlark.com/lark/0/2018/jpeg/14378/1545284701255-749064bf-b80c-4764-b9bc-b718fd2b8411.jpeg" alt=""></p>
+</li>
+<li><p>使用场景<br>GUCDR 模型很适合用于前期需求调研和整理阶段；特别是在自己不是很熟悉的领域中，把信息按照模型和画布中的点进行归类汇总；最大限度的让自己的设计思维和信息逻辑得到诠释。</p>
+</li>
+<li><p>设计价值<br>对设计的需求来源及设计目标的聚焦定位，非常有价值，能快入深入了解业务背景；<br>对设计阶段的目标拆解，从设计目标 &gt; 设计策略 &gt; 设计方案，层层递进，设计方案输出的逻辑性和针对性很强。</p>
+</li>
+<li>具体实践案例说明<br>GUCDR 模型在具体的使用过程中，可以和 GUCDR 画布结合起来一起使用。信息下钻的更深入具体，从项目目标到设计落地，每个阶段都有具体的节点支撑，在使用过程中只需要把信息直接输入到对应的位置即可。下图为 GUCDR 画布模板，可直接把业务相关信息输入进来。<br><img src="https://cdn.nlark.com/lark/0/2018/jpeg/14378/1545284712523-fdc4ca79-8262-41e8-90a0-7c16e4de950d.jpeg" alt=""></li>
+</ol>
+<h3 id="模型四：双钻模型"><a href="#模型四：双钻模型" class="headerlink" title="模型四：双钻模型"></a>模型四：双钻模型</h3><ol>
+<li>概念说明<br>双钻设计模型由英国设计协会提出，该设计模型的核心是：发现正确的问题、发现正确的解决方案。<br>双钻模型是一个结构化的设计方法，被很多设计师喜爱和使用。</li>
+</ol>
+<ul>
+<li>探索/调研——透析问题（发散）</li>
+<li>定义/合成——聚焦领域（集中）</li>
+<li>发展/构思——潜在问题（发散）</li>
+<li>传达/实现——实施方案（集中）<br><img src="https://cdn.nlark.com/lark/0/2018/jpeg/14378/1545284724790-2cef6a57-4beb-4a8e-b3be-0e86e7f5edc4.jpeg" alt=""></li>
+</ul>
+<ol start="2">
+<li><p>使用场景<br>一般应用在产品开发过程中的需求定义和交互设计阶段；教我们如何对未知的可能的事物进行探索；一步步到达已知的理应的层面。</p>
+</li>
+<li><p>操作使用说明<br>双钻模型的四个阶段也许很精简并且合并到两个主要的阶段。</p>
+</li>
+</ol>
+<ul>
+<li>第一阶段：做对的事（菱形1——探索和定义）</li>
+<li>第二阶段：把事情做对（菱形2——开发和履行）<br><img src="https://cdn.nlark.com/lark/0/2018/jpeg/14378/1545284736152-d33eee69-1d55-4f43-961f-e3709d2f041e.jpeg" alt=""><br><img src="https://cdn.nlark.com/lark/0/2018/jpeg/14378/1545284742257-c338c478-3bd9-4a23-b1b4-a1934f79bc99.jpeg" alt=""></li>
+</ul>
+<ol start="4">
+<li>具体实践案例说明<br>下图是对阿里内部一款移动运维产品的分析，分析其从 0-1 的方向探索和从 1-1.5 的发展历程：<br><img src="https://cdn.nlark.com/lark/0/2018/jpeg/14378/1545284775278-84d466da-fbd4-499c-9d74-9d4036212e80.jpeg" alt=""><br>下图是曾经在一个设计讲座中，滴滴 CDX 一位设计师的分享，她把双钻模型利用到设计的研究和输出阶段，此模型此刻的使用场景也很贴切；不仅仅是在完整的一个项目中，在单一的某个阶段双钻模型也是理念很好的承载容器。<br><img src="https://cdn.nlark.com/lark/0/2018/jpeg/14378/1545284783681-fa29305a-6922-4238-8fc8-33b730579d3a.jpeg" alt=""></li>
+</ol>
+<h3 id="模型五：METUX幸福模型"><a href="#模型五：METUX幸福模型" class="headerlink" title="模型五：METUX幸福模型"></a>模型五：METUX幸福模型</h3><ol>
+<li><p>概念说明<br>为了帮助大家更好地进行“幸福设计”，卡里罗教授分享了他的一个模型——Motivation, Engagement and Thriving in theUser Experience (METUX)。</p>
+</li>
+<li><p>使用场景<br>产品成熟稳定期，需对产品&amp;用户体验进行迭代提升时；<br>综合对产品体验进行评估分析，需提升用户幸福感，希望产品能对用户行为方式及生活质量有所影响时。</p>
+</li>
+<li>主要使用操作<br>在考虑用户体验时，从4个层次进行考虑：</li>
+</ol>
+<ul>
+<li>第一层是“界面”体验：用户与产品交互时的体验如何。</li>
+<li>第二层是“任务”体验：界面之上是用户完成的任务。如利用智能手环计步，用户在完成任务时体验如何。</li>
+<li>第三层是“行为”体验：任务之上是用户的行为。如用户购买智能手环的目的是运动，此时行为可能是跑步、骑自行车。因此   产品在任务之上应该深入关注用户行为上的体验。</li>
+<li>第四层是“生活”体验：行为会对生活产生影响。如运动过量可能导致身体受损。</li>
+</ul>
+<p>在设计过程中，应该关注“胜任力”、“自主性”和“关系”三个关键因素，这些基本心理诉求是动机、投入感和幸福感的根本。</p>
+<p><img src="https://cdn.nlark.com/lark/0/2018/jpeg/14378/1545284864364-16f6613e-11fd-4a68-a5c4-9061800d32a4.jpeg" alt=""></p>
+
+  </article>
+  <footer class="f-cf">
+    
+      <a href="/2018/12/04/1-4 功能结构图，信息架构图，产品结构图的相爱相杀/" class="link f-fl">⟵1-4 功能结构图，信息架构图，产品结构图的相爱相杀</a>
+    
+    
+      <a href="/2018/12/02/1-2 用户需求到产品需求/" class="link f-fr">1-2 用户需求到产品需求⟶</a>
+    
+  </footer>
+</section></div>
+    <footer id="footer" class="f-cf">
+  ken-tao@foxmail.com
+  
+    
+      
+        · <a href="mailto:ken-tao@foxmail.com" target="_blank" class="nav-icn">Mail</a>
+      
+    
+      
+        · <a href="https:www.linkedin.com/in/tao98" target="_blank" class="nav-icn">Linkedin</a>
+      
+    
+      
+        · <a href="https://www.instagram.com/clovertuan/" target="_blank" class="nav-icn">Zcool</a>
+      
+    
+      
+        · <a href="https://github.com/tao98" target="_blank" class="nav-icn">GitHub</a>
+      
+    
+  
+  <span class="copyright">All rights reserved @Tao    POWERED BY HEXO</span>
+</footer>
+  </div>
+</body>
+</html>
